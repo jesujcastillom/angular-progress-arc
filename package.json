@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mathewbyrne/angular-progress-arc.git"
+    "url": "git://github.com/jesujcastillom/angular-progress-arc.git"
   },
   "keywords": [
     "angularjs",
@@ -23,7 +23,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mathewbyrne/angular-progress-arc/issues"
+    "url": "https://github.com/jesujcastillom/angular-progress-arc/issues"
   },
   "homepage": "http://mathewbyrne.github.io/angular-progress-arc/",
   "devDependencies": {
