@@ -1,0 +1,19 @@
+<svg ng-attr-view_box="0 0 {{size + ' ' + size}}">
+    <circle class="ngpa-background"
+            fill="none"
+            ng-attr-r="{{radius}}"
+            ng-attr-cx="{{size / 2}}"
+            ng-attr-cy="{{size / 2}}"
+            ng-attr-stroke="{{background}}"
+            ng-attr-stroke-width="{{strokeWidthCapped}}"></circle>
+    <circle class="ngpa-progress"
+            fill="none"
+            ng-attr-r="{{radius}}"
+            ng-attr-cx="{{size/2}}"
+            ng-attr-cy="{{size/2}}"
+            ng-attr-stroke="{{stroke}}"
+            ng-attr-stroke-width="{{strokeWidthCapped}}"
+            ng-attr-stroke-dasharray="{{circumference}}"
+            ng-attr-stroke-dashoffset="{{(1 - complete()) * circumference}}"
+            ng-attr-transform="rotate({{offset}}, {{size/2}}, {{size/2}}){{ (counterClockwise && counterClockwise != 'false') ? ' translate(0, ' + size + ') scale(1, -1)' : '' }}"></circle>
+</svg>
