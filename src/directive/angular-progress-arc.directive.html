@@ -10,7 +10,7 @@
         <tspan>
             {{label}}
         </tspan>
-        <tspan dy="-15" dx="-5" ng-if="supLabel" font-size="0.4em">
+        <tspan ng-attr-dy="{{(fontSize/2)*(-1)}}" dx="-5" ng-if="supLabel" font-size="0.4em">
             {{supLabel}}
         </tspan>
     </text>
