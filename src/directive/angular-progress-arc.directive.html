@@ -2,10 +2,18 @@
     <circle class="ngpa-background"
             fill="none"
             ng-attr-r="{{radius}}"
-            ng-attr-cx="{{size / 2}}"
-            ng-attr-cy="{{size / 2}}"
+            ng-attr-cx="{{size/2}}"
+            ng-attr-cy="{{size/2}}"
             ng-attr-stroke="{{background}}"
             ng-attr-stroke-width="{{strokeWidthCapped}}"></circle>
+    <text y="50%" x="50%" text-anchor="middle" ng-attr-dy="{{(fontSize / 2) - strokeWidth}}" ng-attr-font-size="{{fontSize}}" ng-if="label">
+        <tspan>
+            {{label}}
+        </tspan>
+        <tspan dy="-15" dx="-5" ng-if="supLabel" font-size="0.4em">
+            {{supLabel}}
+        </tspan>
+    </text>
     <circle class="ngpa-progress"
             fill="none"
             ng-attr-r="{{radius}}"
