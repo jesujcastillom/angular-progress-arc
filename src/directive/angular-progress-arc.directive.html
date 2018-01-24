@@ -6,7 +6,7 @@
             ng-attr-cy="{{size/2}}"
             ng-attr-stroke="{{background}}"
             ng-attr-stroke-width="{{strokeWidthCapped}}"></circle>
-    <text y="50%" x="50%" text-anchor="middle" ng-attr-dy="{{(fontSize / 2) - strokeWidth}}" ng-attr-font-size="{{fontSize}}" ng-if="label">
+    <text y="50%" x="50%" text-anchor="middle" ng-attr-fill="{{stroke}}" ng-attr-dy="{{(fontSize / 2) - strokeWidth}}" ng-attr-font-size="{{fontSize}}" ng-if="label">
         <tspan>
             {{label}}
         </tspan>
