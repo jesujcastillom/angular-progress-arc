@@ -7,7 +7,7 @@
             ng-attr-stroke="{{background}}"
             ng-attr-stroke-width="{{strokeWidthCapped}}"></circle>
     <text y="50%" x="50%" text-anchor="middle" ng-attr-fill="{{stroke}}" ng-attr-dy="{{(fontSize / 2) - strokeWidth}}" ng-attr-font-size="{{fontSize}}" ng-if="label">
-        <tspan>
+        <tspan ng-style="labelStyle">
             {{label}}
         </tspan>
         <tspan ng-attr-dy="{{(fontSize/2)*(-1)}}" dx="-5" ng-if="supLabel" font-size="0.4em">

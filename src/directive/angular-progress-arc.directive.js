@@ -12,7 +12,8 @@ export default class AngularProgressArcDirective {
 			counterClockwise: "@", // Boolean value indicating
 			complete: "&", // Expression evaluating to float [0.0, 1.0]
 			background: "@", // Color of the background ring. Defaults to null.
-			label: "@", // centered text
+			label: "@", // centered text,
+			labelStyle: "@",
 			supLabel: "@", // unit for centered text,
 			fontSize: "@"
 		};
